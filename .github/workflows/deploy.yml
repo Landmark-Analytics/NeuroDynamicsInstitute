@@ -20,12 +20,12 @@ jobs:
           server: neurodynamicsinstitute.com
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ./
-          server-dir: ./
           protocol: ftps
           exclude: |
-            .github/*
-            .vscode/*
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            .vscode/**
             .cspell.json
             .editorconfig
             .prettierignore
