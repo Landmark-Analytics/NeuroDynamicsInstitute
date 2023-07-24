@@ -1,0 +1,34 @@
+name: 🚀 Deploy Website
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: [".vscode/**", "README.md", ".*"]
+permissions:
+  contents: write
+jobs:
+  web-deploy:
+    name: 🎉 Deploy Prod
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+
+      - name: 📂 Upload files via FTPS
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: neurodynamicsinstitute.com
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
+          server-dir: ./
+          protocol: ftps
+          exclude: |
+            .github/*
+            .vscode/*
+            .cspell.json
+            .editorconfig
+            .prettierignore
+            package.json
+            package-lock.json
+            README.md

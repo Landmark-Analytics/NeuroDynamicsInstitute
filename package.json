@@ -1,0 +1,21 @@
+{
+  "name": "neurodynamicsinstitute",
+  "version": "1.0.0",
+  "description": "Neuro Dynamics Institute - Public Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Landmark-Analytics/NeuroDynamicsInstitute.git"
+  },
+  "private": true,
+  "author": "Landmark Analytics",
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/Landmark-Analytics/NeuroDynamicsInstitute/issues"
+  },
+  "homepage": "http://neurodynamicsinstitute.com",
+  "devDependencies": {}
+}
