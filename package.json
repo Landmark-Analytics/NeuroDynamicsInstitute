@@ -10,7 +10,6 @@
     "type": "git",
     "url": "git+https://github.com/Landmark-Analytics/NeuroDynamicsInstitute.git"
   },
-  "private": true,
   "author": "Landmark Analytics",
   "license": "none",
   "bugs": {
