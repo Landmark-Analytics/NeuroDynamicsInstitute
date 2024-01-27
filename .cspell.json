@@ -1,0 +1,8 @@
+{
+  "version": "0.2",
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/master/cspell.schema.json",
+  "language": "en",
+  "words": ["Antiforgery", "ASPNETCORE", "neuro"],
+  "flagWords": [],
+  "ignorePaths": ["node_modules/**", "package-lock.json", "package.json"]
+}
